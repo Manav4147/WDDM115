@@ -36,7 +36,31 @@
                 <td>Bamboo forests of China</td>
             </tr>
         </table>
-    
+    <br><br>
+          <!-- Add a button -->
+    <button onclick="changeBackgroundColor()">Change Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+            // Get the body element
+            var body = document.body;
+
+            // Generate a random color (you can customize this part)
+            var randomColor = getRandomColor();
+
+            // Set the background color of the body
+            body.style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
 
 </body>
 </html>
