@@ -5,15 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github</title>
 </head>
-<body>
-    <h1>My name is Manav</h1>
-    <p>This is my first time using Github</p>
-    <img src="https://cdn.pixabay.com/photo/2023/05/07/04/47/panda-7975538_640.png">
+<body style="background-color: lightblue;">
+    <h1 align="center">My name is Manav</h1>
+    <p align="center">This is my first time using Github</p>
+    <img src="https://cdn.pixabay.com/photo/2023/05/07/04/47/panda-7975538_640.png"><br>
     <a href="https://www.linkedin.com/in/manavshah4147/">My Linked In Profile</a>
     <ul>
         <li> I like coding</li>
         <li> I also like cricket </li>
     </ul>
+    <p> From here i will update the changes on the page </p>
+   
+    <a href="https://www.instagram.com/_._._maximillion_._._/">My Instagram Link</a>
+    <ul>
+        <li><b>I like the pandas</b></li>
+        <li><b>Pandas Love Sugar cane</b></li>
+    <br>
+    <H1>Table About Pandas</H1>
+        <table border="1">
+            <tr>
+                <th>Category</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Scientific Name</td>
+                <td>Ailuropoda melanoleuca</td>
+            </tr>
+            <tr>
+                <td>Habitat</td>
+                <td>Bamboo forests of China</td>
+            </tr>
+        </table>
+    <br><br>
+          <!-- Add a button -->
+    <button onclick="changeBackgroundColor()">Change Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+            // Get the body element
+            var body = document.body;
+
+            // Generate a random color (you can customize this part)
+            var randomColor = getRandomColor();
+
+            // Set the background color of the body
+            body.style.backgroundColor = randomColor;
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
 
 </body>
 </html>
